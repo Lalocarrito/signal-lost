@@ -1,0 +1,52 @@
+---
+// Footer de papel con línea dibujada a mano.
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-main">Made by the Signal lost team for the NASA Space Apps Challenge 2026</p>
+    <p class="footer-small">Not an official NASA product.</p>
+  </div>
+  <svg class="hand-line" viewBox="0 0 1440 20" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 14 C 260 10, 520 12, 820 11 S 1300 9, 1400 6 S 1430 4, 1440 2" />
+  </svg>
+</footer>
+
+<style>
+  .site-footer {
+    position: relative;
+    background: var(--cream);
+    color: var(--ink-soft);
+    z-index: 5;
+  }
+
+  .footer-inner {
+    padding: 22px 0 12px;
+    text-align: center;
+    font-family: var(--font-body);
+  }
+
+  .footer-main {
+    font-size: clamp(17px, 1.8vw, 20px);
+    line-height: 1.2;
+  }
+
+  .footer-small {
+    font-size: 15px;
+    color: var(--ink);
+  }
+
+  .hand-line {
+    display: block;
+    width: 100%;
+    height: 20px;
+  }
+
+  .hand-line path {
+    fill: none;
+    stroke: var(--ink-soft);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+</style>

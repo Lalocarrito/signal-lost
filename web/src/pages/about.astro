@@ -1,0 +1,434 @@
+---
+// ABOUT: el reto, qué practican los niños y el equipo.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sky from '../components/Sky.astro';
+import { url } from '../lib/url';
+import { team, spaceAppsProjectUrl } from '../data/team.js';
+
+const skills = [
+  'Planning energy, air and food',
+  'Fixing problems step by step',
+  'Reading real space data',
+  'Thinking alone when Earth is far away',
+];
+const badgeColors = ['#F5A300', '#3E8FD8', '#6BC27A', '#F48A8A', '#9C8CFF', '#F7D445'];
+// Herramientas con su logo (los logos están en public/images/tools/)
+const tools = [
+  { name: 'Unity', logo: 'images/tools/unity.png' },
+  { name: 'C#', logo: 'images/tools/csharp.png' },
+  { name: 'Unity Version Control' },
+  { name: 'Astro', logo: 'images/tools/astro.png' },
+  { name: 'Canva', logo: 'images/tools/canva.png' },
+  { name: 'NASA open data' },
+];
+const stars = [
+  { x: '5%', y: '8%', size: 46, kind: 'star', rot: -8 },
+  { x: '90%', y: '14%', size: 56, kind: 'sparkle', rot: 6 },
+  { x: '92%', y: '64%', size: 40, kind: 'star', rot: 10 },
+  { x: '4%', y: '60%', size: 50, kind: 'sparkle', rot: -4 },
+];
+---
+
+<BaseLayout title="About" active="about" bg="home">
+  <Sky stars={stars} />
+
+  <section class="intro container">
+    <p class="kicker crew-log">— crew log —</p>
+    <h1 class="page-title">About the Mission</h1>
+    <p class="lead">We are students who love space and games.</p>
+  </section>
+
+  <section class="challenge container">
+    <article class="paper-card challenge-card tilt-soft">
+      <span class="tag">NASA Space Apps Challenge 2026</span>
+      <h2>Junior Astronaut Mission Trainer</h2>
+      <p>
+        Our challenge was to help kids train like real astronauts. So we built a game where you can't just press a
+        button and win: you plan, you repair, you wait for messages from Earth and you make your own choices.
+      </p>
+      <p class="where">Local event · Phoenix, Arizona</p>
+      <a class="card-link" href={spaceAppsProjectUrl} target="_blank" rel="noopener">See our project on spaceappschallenge.org ↗</a>
+    </article>
+
+    <div class="skills">
+      <h2 class="skills-title">What kids practice</h2>
+      <ul>
+        {skills.map((s, i) => (
+          <li>
+            <span class="dot" style={`background:${badgeColors[i]}`} aria-hidden="true"></span>
+            {s}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="built built-top container">
+    <h2 class="built-title">Built with</h2>
+    <ul class="tools">
+      {tools.map((t) => (
+        <li>
+          {t.logo && <img src={url(t.logo)} alt="" width="34" height="34" loading="lazy" />}
+          <span>{t.name}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="crew-section container">
+    <h2 class="section-title">Meet the team</h2>
+    <div class="crew">
+      {
+        team.map((m, i) => (
+          <article class="paper-card member">
+            <div class="member-top">
+              {m.photo ? (
+                <img class="badge photo" src={url(m.photo)} alt={`Photo of ${m.name}`} width="96" height="96" loading="lazy" />
+              ) : (
+                <span class="badge" style={`background:${badgeColors[i % badgeColors.length]}`} aria-hidden="true">
+                  {m.name.charAt(0)}
+                </span>
+              )}
+              <div class="name-row">
+                <h3>{m.name}</h3>
+                <img src={url('images/mexico.png')} alt="Mexico flag" width="120" height="87" loading="lazy" />
+                <img src={url('images/unison.png')} alt="Universidad de Sonora logo" width="120" height="120" loading="lazy" />
+              </div>
+              <p class="school">
+                Universidad de Sonora<br />
+                <span>Software Engineering</span>
+              </p>
+              <p>{m.role}</p>
+            </div>
+            <div class="links">
+              <a
+                class:list={['card-link', { 'is-empty': !m.github }]}
+                href={m.github || '#'}
+                target={m.github ? '_blank' : undefined}
+                rel="noopener"
+                aria-label={`${m.name} on GitHub`}
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.8 1a9.6 9.6 0 0 1 5 0c2-1.3 2.8-1 2.8-1a3.6 3.6 0 0 1 .1 2.7 3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z" /></svg>
+                GitHub
+              </a>
+              <a
+                class:list={['card-link', { 'is-empty': !m.linkedin }]}
+                href={m.linkedin || '#'}
+                target={m.linkedin ? '_blank' : undefined}
+                rel="noopener"
+                aria-label={`${m.name} on LinkedIn`}
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 9h3v12H3zM9 9h2.9v1.7h.1c.4-.8 1.4-1.7 3-1.7 3.1 0 3.7 2 3.7 4.7V21h-3v-6.5c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H9z" /></svg>
+                LinkedIn
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="built container">
+    <a class="btn-mission" href={url('mission/')}>Start Mission</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .intro {
+    position: relative;
+    z-index: 1;
+    padding-top: clamp(40px, 6vw, 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .crew-log {
+    color: var(--teal);
+  }
+
+  .lead {
+    max-width: 640px;
+  }
+
+  .challenge {
+    position: relative;
+    z-index: 1;
+    margin-top: clamp(50px, 7vw, 80px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  .challenge-card {
+    flex: 1 1 440px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 30px 28px;
+  }
+
+  .tag {
+    align-self: flex-start;
+    font-family: var(--font-hand);
+    font-size: 20px;
+    padding: 2px 14px 4px;
+    background: var(--orange);
+    color: var(--ink);
+    border: 2px solid var(--ink);
+    border-radius: 16px 12px 18px 14px;
+  }
+
+  .challenge-card h2 {
+    font-size: clamp(32px, 3.6vw, 42px);
+    color: var(--ink);
+  }
+
+  .where {
+    color: var(--ink-soft) !important;
+  }
+
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    min-height: 44px;
+    padding: 4px 16px 6px;
+    font-family: var(--font-hand);
+    font-size: 21px;
+    color: var(--ink);
+    text-decoration: none;
+    border: 2px dashed var(--orbit);
+    border-radius: 20px 14px 22px 16px;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+
+  .card-link:hover {
+    color: var(--ink);
+    background: #FFE9C2;
+    transform: rotate(-2deg);
+  }
+
+  .card-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
+  .skills {
+    flex: 1 1 320px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .skills-title {
+    font-size: 36px;
+    color: var(--white);
+  }
+
+  .skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .skills li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    font-size: 19px;
+    color: var(--white);
+    background: rgba(254, 252, 238, 0.08);
+    border: 2px dashed var(--teal);
+    border-radius: 18px 14px 20px 16px;
+  }
+
+  .dot {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--cream);
+  }
+
+  .crew-section {
+    position: relative;
+    z-index: 1;
+    margin-top: clamp(60px, 8vw, 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .crew {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+  }
+
+  /* Tarjetas del equipo: derechas y alargadas, con los links abajo */
+  .member {
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 28px 26px;
+    transform: none;
+  }
+
+  /* Foto del miembro (si tiene "photo" en team.js) */
+  .badge.photo {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    background: var(--cream);
+    transform: rotate(-3deg);
+  }
+
+  /* Nombre + bandera + logo UNISON */
+  .name-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .name-row img {
+    flex: none;
+    width: auto;
+    height: 25px;
+  }
+
+  /* Universidad y carrera debajo del nombre */
+  .member .school {
+    margin-top: -4px;
+    font-family: var(--font-hand);
+    font-size: 17px;
+    line-height: 1.3;
+    color: var(--ink);
+  }
+
+  .member .school span {
+    color: var(--orbit);
+  }
+
+  .member-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .badge {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2.5px solid var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-hand);
+    font-size: 34px;
+    color: var(--ink);
+  }
+
+  .member h3 {
+    font-family: var(--font-hand);
+    font-size: 34px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 16px;
+    border-top: 2px dashed #9AA5B1;
+  }
+
+  .links .card-link {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  /* Mientras no tenga link, el botón se ve apagadito */
+  .links .card-link.is-empty {
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  .built {
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .built-title {
+    font-size: 38px;
+    color: var(--white);
+  }
+
+  .tools {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .tools li {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    gap: 10px;
+    font-family: var(--font-hand);
+    font-size: 22px;
+    padding: 6px 18px 6px 12px;
+    background: var(--cream);
+    color: var(--ink);
+    border: 2.5px solid var(--ink);
+    border-radius: 22px 18px 24px 20px;
+  }
+
+  .tools img {
+    display: inline-block;
+    flex: none;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+  }
+
+  /* "Built with" arriba de los miembros */
+  .built-top {
+    margin-top: 60px;
+    padding-bottom: 0;
+  }
+
+  /* Menos espacio entre "Built with" y "Meet the team" */
+  .built-top + .crew-section {
+    margin-top: 40px;
+  }
+
+  .built .btn-mission {
+    margin-top: 24px;
+  }
+</style>
