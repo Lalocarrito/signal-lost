@@ -11,5 +11,5 @@ export default defineConfig({
   // Cuando ya se vaya a publicar, cambia esto a '../docs'.
   // OJO: al construir, Astro BORRA y vuelve a crear esa carpeta, asi que el juego
   // de Unity debe vivir en web/public/play/ (Astro lo copia solo a docs/play/).
-  outDir: './dist',
+  outDir: '../docs',
 });
