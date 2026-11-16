@@ -20,6 +20,16 @@ const robotArt = [
   { name: 'Opportunity', src: 'images/robots/art-opportunity.webp', w: 520, h: 445, pos: 'pos-3' },
   { name: 'Phoenix', src: 'images/robots/art-phoenix.webp', w: 520, h: 281, pos: 'pos-4' },
 ];
+
+// Fotos del Arizona Science Center (se pueden arrastrar en compu)
+// x / y / w son porcentajes dentro del tablero; rot es la inclinación.
+const ascPhotos = [
+  { src: 'images/asc/asc-final-demo.jpg', alt: 'Our team with the Signal Lost game running on four laptops', w: 900, h: 675, x: 3, y: 4, size: 36, rot: -5 },
+  { src: 'images/asc/asc-team-table.jpg', alt: 'The six of us working at the Mars station table', w: 900, h: 675, x: 60, y: 3, size: 36, rot: 4 },
+  { src: 'images/asc/asc-entrance.jpg', alt: 'The team in front of the Arizona Science Center entrance', w: 506, h: 900, x: 42, y: 3, size: 15, rot: -3 },
+  { src: 'images/asc/asc-sharing.jpg', alt: 'Sharing our drawing process with visitors', w: 900, h: 675, x: 10, y: 57, size: 35, rot: 3 },
+  { src: 'images/asc/asc-digital-world.jpg', alt: 'Two team members at the My Digital World exhibit', w: 675, h: 900, x: 62, y: 55, size: 18, rot: 6 },
+];
 ---
 
 <BaseLayout active="home" bg="home">
@@ -53,7 +63,76 @@ const robotArt = [
   </div>
 
   <img class="astronaut" src={url('images/astronaut.webp')} alt="A smiling young astronaut in an orange suit, pointing up at the stars" width="1100" height="826" />
+
+  <!-- Arizona Science Center -->
+  <section class="asc container" aria-labelledby="asc-title">
+    <p class="kicker">— field log · Phoenix, Arizona —</p>
+    <h2 id="asc-title" class="section-title">Arizona Science Center</h2>
+    <p class="asc-text">
+      We were the lucky team that got to spend the challenge at the Arizona Science Center. There we developed our
+      idea for this challenge and shared our process with the community: we answered visitors' questions and invited
+      kids to join science competitions, hoping to inspire them to step into these fields.
+    </p>
+    <p class="asc-hint">Drag the photos around!</p>
+
+    <div class="photo-board" data-board>
+      <p class="board-quote">If you can dream it, you can build it!</p>
+      {
+        ascPhotos.map((ph, i) => (
+          <figure
+            class="polaroid"
+            style={`--x:${ph.x}%; --y:${ph.y}%; --size:${ph.size}%; --rot:${ph.rot}deg; z-index:${i + 1};`}
+            data-drag
+          >
+            <img src={url(ph.src)} alt={ph.alt} width={ph.w} height={ph.h} loading="lazy" draggable="false" />
+          </figure>
+        ))
+      }
+    </div>
+  </section>
 </BaseLayout>
+
+<script>
+  // Arrastrar las fotos dentro del tablero (solo con mouse/lápiz en pantallas grandes).
+  const board = document.querySelector('[data-board]');
+  const desktop = window.matchMedia('(min-width: 761px)');
+  let top = 10;
+
+  if (board) {
+    board.querySelectorAll('[data-drag]').forEach((card) => {
+      card.addEventListener('pointerdown', (e) => {
+        if (!desktop.matches) return;
+        e.preventDefault();
+        const b = board.getBoundingClientRect();
+        const c = card.getBoundingClientRect();
+        const offX = e.clientX - c.left;
+        const offY = e.clientY - c.top;
+        top += 1;
+        card.style.zIndex = String(top);
+        card.classList.add('is-dragging');
+        card.setPointerCapture(e.pointerId);
+
+        const move = (ev) => {
+          const maxX = b.width - c.width;
+          const maxY = b.height - c.height;
+          const x = Math.min(Math.max(ev.clientX - b.left - offX, 0), maxX);
+          const y = Math.min(Math.max(ev.clientY - b.top - offY, 0), maxY);
+          card.style.setProperty('--x', `${(x / b.width) * 100}%`);
+          card.style.setProperty('--y', `${(y / b.height) * 100}%`);
+        };
+        const up = () => {
+          card.classList.remove('is-dragging');
+          card.removeEventListener('pointermove', move);
+          card.removeEventListener('pointerup', up);
+          card.removeEventListener('pointercancel', up);
+        };
+        card.addEventListener('pointermove', move);
+        card.addEventListener('pointerup', up);
+        card.addEventListener('pointercancel', up);
+      });
+    });
+  }
+</script>
 
 <style>
   .hero {
@@ -149,6 +228,155 @@ const robotArt = [
     .robot-art {
       position: static;
       width: clamp(80px, 18vw, 120px);
+    }
+  }
+
+  /* ---------- Arizona Science Center ---------- */
+  .asc {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: clamp(50px, 7vw, 90px) 0 clamp(60px, 8vw, 100px);
+    text-align: center;
+  }
+
+  .asc .section-title {
+    margin: 0;
+  }
+
+  .asc-text {
+    max-width: 760px;
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.55;
+    color: var(--white);
+  }
+
+  .asc-hint {
+    font-family: var(--font-hand);
+    font-size: 20px;
+    color: var(--orange);
+    transform: rotate(-2deg);
+  }
+
+  /* Tablero de papel con las fotos encimadas */
+  .photo-board {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 12;
+    margin-top: 8px;
+    background: var(--cream);
+    border: 2.5px solid var(--ink);
+    border-radius: var(--wobbly-1);
+    box-shadow: 6px 8px 0 rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+  }
+
+  /* Frase escrita en el tablero (queda detrás de las fotos) */
+  .board-quote {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    width: 90%;
+    margin: 0;
+    font-family: var(--font-hand);
+    font-size: clamp(30px, 4.4vw, 52px);
+    line-height: 1.1;
+    color: var(--orange);
+    text-align: center;
+    transform: translate(-50%, -50%) rotate(-4deg);
+    pointer-events: none;
+  }
+
+  /* Foto estilo polaroid */
+  .polaroid {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    margin: 0;
+    padding: 8px 8px 22px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 6px 14px rgba(31, 41, 51, 0.35);
+    transform: rotate(var(--rot));
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .polaroid:hover {
+    transform: rotate(var(--rot)) scale(1.03);
+  }
+
+  .polaroid.is-dragging {
+    cursor: grabbing;
+    transform: rotate(0deg) scale(1.06);
+    box-shadow: 0 14px 28px rgba(31, 41, 51, 0.45);
+    transition: none;
+  }
+
+  .polaroid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+
+  /* En celular/tablet: collage fijo en dos columnas, sin arrastrar */
+  @media (max-width: 760px) {
+    .asc-hint {
+      display: none;
+    }
+
+    .asc-text {
+      padding: 0 6px;
+    }
+
+    .photo-board {
+      aspect-ratio: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      gap: 16px 12px;
+      padding: 18px 14px 22px;
+    }
+
+    .polaroid {
+      position: relative;
+      left: auto;
+      top: auto;
+      width: auto;
+      padding: 5px 5px 14px;
+      cursor: default;
+      touch-action: auto;
+    }
+
+    .polaroid:nth-child(2) {
+      grid-column: 1 / -1;
+    }
+
+    .board-quote {
+      position: static;
+      grid-column: 1 / -1;
+      order: 1;
+      width: auto;
+      padding: 6px 0;
+      font-size: 30px;
+      transform: rotate(-3deg);
+    }
+
+    .polaroid:nth-child(2) {
+      order: 0;
+    }
+
+    .polaroid:nth-child(n + 3) {
+      order: 2;
     }
   }
 
