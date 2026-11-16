@@ -8,4 +8,4 @@ export const team = [
   { name: 'Mia Valenzuela', role: 'Characters, Narrative and art', github: 'https://github.com/miaren125', linkedin: 'https://www.linkedin.com/in/miareneeval/', photo: 'images/team/mia.jpg' },
 ];
 
-export const spaceAppsProjectUrl = 'https://www.spaceappschallenge.org/2026/challenges/junior-astronaut-mission-trainer/';
+export const spaceAppsProjectUrl = 'https://www.spaceappschallenge.org/2026/find-a-team/2isi/';
