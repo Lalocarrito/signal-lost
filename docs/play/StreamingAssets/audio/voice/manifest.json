@@ -1,0 +1,986 @@
+{
+  "sam_prologue_01": {
+    "file": "sam_prologue_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 65,
+    "bytes": 37440,
+    "text": "Welcome, specialist. I'm Sam, your flight director here on Earth."
+  },
+  "sam_prologue_02": {
+    "file": "sam_prologue_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 77,
+    "bytes": 31488,
+    "text": "Robots on the Moon and Mars are getting things ready for the next astronauts."
+  },
+  "sam_prologue_03": {
+    "file": "sam_prologue_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 64,
+    "bytes": 32256,
+    "text": "But four of them stopped sending signals. We don't know why yet."
+  },
+  "sam_prologue_04": {
+    "file": "sam_prologue_04.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 62,
+    "bytes": 38592,
+    "text": "You're our robot specialist. Your job: find them and fix them."
+  },
+  "sam_prologue_05": {
+    "file": "sam_prologue_05.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 61,
+    "bytes": 32256,
+    "text": "First stop: the Moon. Let's see what you learned in training."
+  },
+  "sam_moon_arrival_01": {
+    "file": "sam_moon_arrival_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 55,
+    "bytes": 35712,
+    "text": "Moon base online. Our signal delay is only 1.3 seconds."
+  },
+  "sam_moon_arrival_02": {
+    "file": "sam_moon_arrival_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 52,
+    "bytes": 25536,
+    "text": "That means I can help you almost live. Let's use it!"
+  },
+  "sam_moon_energy_01": {
+    "file": "sam_moon_energy_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 81,
+    "bytes": 39744,
+    "text": "Every day starts with energy. Split it between life support, radio and shielding."
+  },
+  "sam_moon_energy_02": {
+    "file": "sam_moon_energy_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 60,
+    "bytes": 33984,
+    "text": "Up here, nothing is free. Everything you do costs something."
+  },
+  "sam_moon_energy_03": {
+    "file": "sam_moon_energy_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 95,
+    "bytes": 43584,
+    "text": "Try giving life support the most. Your crew needs air and water first. Don't forget the oxygen."
+  },
+  "sam_moon_cables_01": {
+    "file": "sam_moon_cables_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 77,
+    "bytes": 33216,
+    "text": "Moon dust is sharp and sticky. It's covering the cables in your solar panels."
+  },
+  "sam_moon_cables_02": {
+    "file": "sam_moon_cables_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 64,
+    "bytes": 29376,
+    "text": "Connect the cables to fix them. Working panels make more energy."
+  },
+  "sam_moon_cables_03": {
+    "file": "sam_moon_cables_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 25,
+    "bytes": 17472,
+    "text": "That's it. Let's go back."
+  },
+  "sam_moon_antenna_01": {
+    "file": "sam_moon_antenna_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 55,
+    "bytes": 23616,
+    "text": "Your oxygen tank fills when you are inside the station."
+  },
+  "sam_moon_antenna_02": {
+    "file": "sam_moon_antenna_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 46,
+    "bytes": 22848,
+    "text": "I hear a weak signal. Point the antenna at it."
+  },
+  "sam_moon_antenna_03": {
+    "file": "sam_moon_antenna_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 58,
+    "bytes": 34944,
+    "text": "Tilt to steer. Driving uses energy, so take the short way."
+  },
+  "sam_moon_antenna_04": {
+    "file": "sam_moon_antenna_04.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 40,
+    "bytes": 24192,
+    "text": "When the signal turns green, hold still."
+  },
+  "sam_moon_antenna_05": {
+    "file": "sam_moon_antenna_05.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 54,
+    "bytes": 31104,
+    "text": "Got it! That's Pragyan. Take the rover and go find it."
+  },
+  "sam_moon_repair_01": {
+    "file": "sam_moon_repair_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 54,
+    "bytes": 24960,
+    "text": "There it is. Open its file and let's see what's wrong."
+  },
+  "sam_moon_repair_02": {
+    "file": "sam_moon_repair_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 65,
+    "bytes": 32064,
+    "text": "Let's connect the cables and point the panel so it faces the sun."
+  },
+  "sam_moon_repair_03": {
+    "file": "sam_moon_repair_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 43,
+    "bytes": 23232,
+    "text": "It's beeping again! Great work, specialist."
+  },
+  "sam_moon_repair_04": {
+    "file": "sam_moon_repair_04.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 59,
+    "bytes": 27840,
+    "text": "Pragyan gave you something for your trip: an extra battery."
+  },
+  "sam_moon_close_01": {
+    "file": "sam_moon_close_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 95,
+    "bytes": 44352,
+    "text": "Did you know? On the Moon, the Sun stays up for about two weeks. Then it's night for two weeks."
+  },
+  "sam_moon_close_02": {
+    "file": "sam_moon_close_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 66,
+    "bytes": 26496,
+    "text": "Can you imagine how a base could stay warm during that long night?"
+  },
+  "sam_moon_pack_01": {
+    "file": "sam_moon_pack_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 68,
+    "bytes": 32832,
+    "text": "You're ready for Mars. Pack your energy, water and air for the trip."
+  },
+  "sam_moon_pack_02": {
+    "file": "sam_moon_pack_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 37,
+    "bytes": 14976,
+    "text": "This time your crew will be with you."
+  },
+  "sam_moon_pack_03": {
+    "file": "sam_moon_pack_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 79,
+    "bytes": 36864,
+    "text": "Pack too little and you'll arrive short. Pack too much and the ship gets heavy."
+  },
+  "sam_trip_01": {
+    "file": "sam_trip_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 67,
+    "bytes": 37824,
+    "text": "Mars is far. The trip takes months, so we'll skip to the good part."
+  },
+  "sam_trip_02": {
+    "file": "sam_trip_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 64,
+    "bytes": 32064,
+    "text": "Tilt to keep the ship on its path. Every fix uses a little fuel."
+  },
+  "sam_trip_03": {
+    "file": "sam_trip_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 72,
+    "bytes": 31680,
+    "text": "One more thing. From now on, my messages will take minutes to reach you."
+  },
+  "sam_trip_04": {
+    "file": "sam_trip_04.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 86,
+    "bytes": 43584,
+    "text": "But don't worry, you won't be alone. The base AI will help you. Good luck, specialist."
+  },
+  "pip_arrival_01": {
+    "file": "pip_arrival_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 127,
+    "bytes": 68928,
+    "text": "Hi, specialist! I'm your Planetary Interface Partner, but you can call me PIP. I run the base, watch the oxygen and tell jokes."
+  },
+  "pip_arrival_02": {
+    "file": "pip_arrival_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 30,
+    "bytes": 15744,
+    "text": "Two of those I'm very good at."
+  },
+  "pip_arrival_03": {
+    "file": "pip_arrival_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 78,
+    "bytes": 60096,
+    "text": "Welcome to Mars! Here a day is called a sol. It lasts 24 hours and 39 minutes."
+  },
+  "pip_arrival_04": {
+    "file": "pip_arrival_04.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 81,
+    "bytes": 38784,
+    "text": "This is your crew. They count on you for air, water and food from the greenhouse."
+  },
+  "pip_arrival_05": {
+    "file": "pip_arrival_05.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 87,
+    "bytes": 48000,
+    "text": "Three robots on Mars stopped talking. Sam sent their files. You pick who to help first."
+  },
+  "pip_arrival_06": {
+    "file": "pip_arrival_06.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 74,
+    "bytes": 39744,
+    "text": "Tip: tap the robot and read each file. It says how that robot can help us."
+  },
+  "sam_arrival_msg_01": {
+    "file": "sam_arrival_msg_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 72,
+    "bytes": 41088,
+    "text": "You made it! I can't answer fast anymore. Trust PIP, and trust yourself."
+  },
+  "pip_arrival_msg_02": {
+    "file": "pip_arrival_msg_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 92,
+    "bytes": 44352,
+    "text": "So basically if I tell Sam a joke now, Sam laughs in a few minutes. Which is still worth it."
+  },
+  "sam_missionA_alert_01": {
+    "file": "sam_missionA_alert_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 45,
+    "bytes": 28608,
+    "text": "Curiosity went quiet after a big solar storm."
+  },
+  "sam_missionA_alert_02": {
+    "file": "sam_missionA_alert_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 63,
+    "bytes": 30528,
+    "text": "Another storm may be coming. Check DONKI before you go outside."
+  },
+  "pip_missionA_alert_03": {
+    "file": "pip_missionA_alert_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 80,
+    "bytes": 46656,
+    "text": "DONKI is NASA's space weather database. It tracks storms that come from the Sun."
+  },
+  "pip_missionA_prep_01": {
+    "file": "pip_missionA_prep_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 52,
+    "bytes": 27264,
+    "text": "Here on Mars, we must be careful when going outside."
+  },
+  "pip_missionA_prep_02": {
+    "file": "pip_missionA_prep_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 34,
+    "bytes": 18048,
+    "text": "Let's check the forecast on DONKI."
+  },
+  "pip_missionA_prep_03": {
+    "file": "pip_missionA_prep_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 75,
+    "bytes": 44352,
+    "text": "Solar storm ahead. Good thing I wear sunscreen. ...I'm a computer. I don't."
+  },
+  "pip_missionA_prep_04": {
+    "file": "pip_missionA_prep_04.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 88,
+    "bytes": 47424,
+    "text": "Mars has very thin air and no magnetic shield like Earth's. More radiation gets through."
+  },
+  "pip_missionA_prep_05": {
+    "file": "pip_missionA_prep_05.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 50,
+    "bytes": 24192,
+    "text": "Let's make our shielding stronger before we leave."
+  },
+  "pip_missionA_prep_06": {
+    "file": "pip_missionA_prep_06.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 60,
+    "bytes": 37824,
+    "text": "Tip: shielding costs energy. Do it the sol before the storm."
+  },
+  "pip_missionA_exit_01": {
+    "file": "pip_missionA_exit_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 41,
+    "bytes": 24192,
+    "text": "The storm passed. It's safe to drive now."
+  },
+  "pip_missionA_exit_02": {
+    "file": "pip_missionA_exit_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 51,
+    "bytes": 30336,
+    "text": "Mars dust gets everywhere. I found some in my code."
+  },
+  "pip_missionA_exit_03": {
+    "file": "pip_missionA_exit_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 109,
+    "bytes": 59904,
+    "text": "Here's Curiosity. Its file says: a solar storm scrambled its computer and left it in safe mode. Let's fix it."
+  },
+  "pip_missionA_repair_01": {
+    "file": "pip_missionA_repair_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 55,
+    "bytes": 26304,
+    "text": "Connect the device to the robot to access the terminal."
+  },
+  "pip_missionA_repair_02": {
+    "file": "pip_missionA_repair_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 78,
+    "bytes": 51456,
+    "text": "Curiosity uses 2 computers. Stop the broken one, and start the other computer."
+  },
+  "pip_missionA_reward_01": {
+    "file": "pip_missionA_reward_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 64,
+    "bytes": 38400,
+    "text": "Curiosity is back! It will warn us about storms one sol earlier."
+  },
+  "sam_missionA_reward_02": {
+    "file": "sam_missionA_reward_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 69,
+    "bytes": 31104,
+    "text": "Checking the forecast was the right call. Real teams do it every day."
+  },
+  "sam_missionA_reward_03": {
+    "file": "sam_missionA_reward_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 100,
+    "bytes": 51456,
+    "text": "Did you know? Earth's magnetic field blocks a lot of space radiation. Mars doesn't have one like it."
+  },
+  "sam_missionA_reward_04": {
+    "file": "sam_missionA_reward_04.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 60,
+    "bytes": 21312,
+    "text": "Do you think that's what makes the northern lights on Earth?"
+  },
+  "sam_missionB_alert_01": {
+    "file": "sam_missionB_alert_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 64,
+    "bytes": 30528,
+    "text": "Phoenix was searching for ice under the ground. Then it stopped."
+  },
+  "sam_missionB_alert_02": {
+    "file": "sam_missionB_alert_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 61,
+    "bytes": 28032,
+    "text": "Your crew needs water too. Keep the tanks full before you go."
+  },
+  "pip_missionB_prep_01": {
+    "file": "pip_missionB_prep_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 74,
+    "bytes": 48768,
+    "text": "We can recycle water or dig for ice. Recycling costs less. Ice gives more."
+  },
+  "pip_missionB_prep_02": {
+    "file": "pip_missionB_prep_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 64,
+    "bytes": 34176,
+    "text": "This water has been recycled so many times, it deserves a medal."
+  },
+  "pip_missionB_prep_03": {
+    "file": "pip_missionB_prep_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 61,
+    "bytes": 41280,
+    "text": "Remember: the greenhouse needs water too. No water, no salad."
+  },
+  "pip_missionB_prep_04": {
+    "file": "pip_missionB_prep_04.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 55,
+    "bytes": 37248,
+    "text": "Tip: keep life support above half before you drive out."
+  },
+  "pip_missionB_exit_01": {
+    "file": "pip_missionB_exit_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 112,
+    "bytes": 62208,
+    "text": "Here's Phoenix. Its file says: hard ice jammed its scoop, and sticky dirt clogged its oven screen. Let's fix it."
+  },
+  "pip_missionB_reward_01": {
+    "file": "pip_missionB_reward_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 57,
+    "bytes": 30912,
+    "text": "Phoenix found ice again! We'll get extra water every sol."
+  },
+  "pip_missionB_reward_02": {
+    "file": "pip_missionB_reward_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 41,
+    "bytes": 29184,
+    "text": "Fresh lettuce on Mars! Lettuce celebrate."
+  },
+  "sam_missionB_reward_03": {
+    "file": "sam_missionB_reward_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 23,
+    "bytes": 16320,
+    "text": "Well, that sounds nice."
+  },
+  "sam_missionB_reward_04": {
+    "file": "sam_missionB_reward_04.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 78,
+    "bytes": 46464,
+    "text": "Did you know? The Space Station recycles about 98 of every 100 drops of water."
+  },
+  "sam_missionB_reward_05": {
+    "file": "sam_missionB_reward_05.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 81,
+    "bytes": 38016,
+    "text": "Can you find out where Mars keeps its ice? It could be useful in future missions."
+  },
+  "sam_missionC_alert_01": {
+    "file": "sam_missionC_alert_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 90,
+    "bytes": 47424,
+    "text": "A dust storm is covering the sky. Opportunity went dark, and your panels are getting weak."
+  },
+  "sam_missionC_alert_02": {
+    "file": "sam_missionC_alert_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 51,
+    "bytes": 29568,
+    "text": "Keep the base warm first. Then go find Opportunity."
+  },
+  "pip_missionC_prep_01": {
+    "file": "pip_missionC_prep_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 86,
+    "bytes": 45504,
+    "text": "Sunlight on Mars is less than half as strong as on Earth. With dust, it's even weaker."
+  },
+  "pip_missionC_prep_02": {
+    "file": "pip_missionC_prep_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 81,
+    "bytes": 46080,
+    "text": "We can repair the panels, or start the small reactor. The reactor takes two sols."
+  },
+  "pip_missionC_prep_03": {
+    "file": "pip_missionC_prep_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 39,
+    "bytes": 29184,
+    "text": "I'm not lazy. I'm in power-saving mode."
+  },
+  "pip_missionC_prep_04": {
+    "file": "pip_missionC_prep_04.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 69,
+    "bytes": 40896,
+    "text": "Tip: start the reactor early. It's slow, but it works in any weather."
+  },
+  "pip_missionC_exit_01": {
+    "file": "pip_missionC_exit_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 73,
+    "bytes": 38016,
+    "text": "Here's Opportunity. Its file says: a dust storm covered its solar panels."
+  },
+  "pip_missionC_exit_02": {
+    "file": "pip_missionC_exit_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 78,
+    "bytes": 45888,
+    "text": "Have you tried turning it off and on again? Oh wait. That's literally our job."
+  },
+  "pip_missionC_reward_01": {
+    "file": "pip_missionC_reward_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 60,
+    "bytes": 36288,
+    "text": "Opportunity is online! The base gets extra energy every sol."
+  },
+  "sam_missionC_reward_02": {
+    "file": "sam_missionC_reward_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 99,
+    "bytes": 51264,
+    "text": "Did you know? NASA is working on small nuclear reactors to power future bases on the Moon and Mars."
+  },
+  "sam_missionC_reward_03": {
+    "file": "sam_missionC_reward_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 66,
+    "bytes": 29376,
+    "text": "Can you imagine how long the biggest dust storms on Mars can last?"
+  },
+  "pip_alert_energy": {
+    "file": "pip_alert_energy.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 51,
+    "bytes": 30912,
+    "text": "Energy is getting low. Let's save some for tonight."
+  },
+  "pip_alert_lifesupport": {
+    "file": "pip_alert_lifesupport.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 65,
+    "bytes": 35136,
+    "text": "Air and water are dropping. The crew needs you to fix that first."
+  },
+  "pip_alert_shield": {
+    "file": "pip_alert_shield.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 57,
+    "bytes": 27264,
+    "text": "Our shielding is weak. Maybe stay inside until we fix it."
+  },
+  "pip_alert_food": {
+    "file": "pip_alert_food.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 61,
+    "bytes": 32832,
+    "text": "Food is running low. The greenhouse needs water to grow more."
+  },
+  "pip_rescue_01_lifesupport": {
+    "file": "pip_rescue_01_lifesupport.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 35,
+    "bytes": 21504,
+    "text": "Uh-oh. We ran out of air and water."
+  },
+  "pip_rescue_01_food": {
+    "file": "pip_rescue_01_food.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 26,
+    "bytes": 21504,
+    "text": "Uh-oh. We ran out of food."
+  },
+  "pip_rescue_01_shield": {
+    "file": "pip_rescue_01_shield.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 31,
+    "bytes": 16512,
+    "text": "Uh-oh. We ran out of shielding."
+  },
+  "pip_rescue_02": {
+    "file": "pip_rescue_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 79,
+    "bytes": 37632,
+    "text": "The crew shared their reserves to help us. We lost a sol, but everyone is okay."
+  },
+  "pip_rescue_03": {
+    "file": "pip_rescue_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 54,
+    "bytes": 29184,
+    "text": "Let's plan a little better this time. You've got this!"
+  },
+  "pip_commander_01_lifesupport": {
+    "file": "pip_commander_01_lifesupport.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 109,
+    "bytes": 45120,
+    "text": "We had to bring the crew inside. Here's what happened: the air and water ran out before we could refill them."
+  },
+  "pip_commander_01_food": {
+    "file": "pip_commander_01_food.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 104,
+    "bytes": 55296,
+    "text": "We had to bring the crew inside. Here's what happened: the crew ate more than the greenhouse could grow."
+  },
+  "pip_commander_01_shield": {
+    "file": "pip_commander_01_shield.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 117,
+    "bytes": 52416,
+    "text": "We had to bring the crew inside. Here's what happened: the shielding got too low, and too much radiation got through."
+  },
+  "pip_commander_02": {
+    "file": "pip_commander_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 59,
+    "bytes": 29568,
+    "text": "Every astronaut learns from a tough sol. Want to try again?"
+  },
+  "pip_final_01": {
+    "file": "pip_final_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 61,
+    "bytes": 31296,
+    "text": "That's all of them, specialist! Every robot is talking again."
+  },
+  "sam_final_02": {
+    "file": "sam_final_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 75,
+    "bytes": 40704,
+    "text": "Specialist, we got signals from all four robots. Everyone here is cheering."
+  },
+  "sam_final_03": {
+    "file": "sam_final_03.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 74,
+    "bytes": 33024,
+    "text": "Thanks to you, the next crew can come to Mars. You're not a cadet anymore."
+  },
+  "pip_final_04": {
+    "file": "pip_final_04.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 64,
+    "bytes": 44352,
+    "text": "I'd hug you, but I don't have arms. Consider this a virtual hug."
+  },
+  "pip_final_05": {
+    "file": "pip_final_05.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 59,
+    "bytes": 29184,
+    "text": "Want to try a different order? Or switch to Commander mode?"
+  },
+  "pip_missionB_mg1_01": {
+    "file": "pip_missionB_mg1_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 37,
+    "bytes": 21504,
+    "text": "Hard ice is stuck in Phoenix's scoop."
+  },
+  "pip_missionB_mg1_02": {
+    "file": "pip_missionB_mg1_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 55,
+    "bytes": 27072,
+    "text": "Tap the ice and dirt with the hammer to break them off!"
+  },
+  "pip_missionB_mg1_03": {
+    "file": "pip_missionB_mg1_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 41,
+    "bytes": 44160,
+    "text": "Tip: ice needs 3 hits. Dirt needs only 1."
+  },
+  "pip_missionB_mg2_01": {
+    "file": "pip_missionB_mg2_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 46,
+    "bytes": 25344,
+    "text": "Sticky dirt is clogging Phoenix's oven screen."
+  },
+  "pip_missionB_mg2_02": {
+    "file": "pip_missionB_mg2_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 56,
+    "bytes": 29568,
+    "text": "Tap fast, press SPACE, or shake your device to clean it!"
+  },
+  "pip_missionB_mg2_03": {
+    "file": "pip_missionB_mg2_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 56,
+    "bytes": 28992,
+    "text": "The real Phoenix team shook its screen for several days."
+  },
+  "pip_missionC_mg1_01": {
+    "file": "pip_missionC_mg1_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 44,
+    "bytes": 24384,
+    "text": "Dust is covering Opportunity's solar panels."
+  },
+  "pip_missionC_mg1_02": {
+    "file": "pip_missionC_mg1_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 54,
+    "bytes": 26304,
+    "text": "Hold and swipe over the panels to brush the dust away!"
+  },
+  "pip_missionC_mg1_03": {
+    "file": "pip_missionC_mg1_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 49,
+    "bytes": 30336,
+    "text": "Tip: just clicking won't work. You have to swipe."
+  },
+  "pip_missionC_mg2_01": {
+    "file": "pip_missionC_mg2_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 40,
+    "bytes": 20160,
+    "text": "Opportunity's battery cables came loose."
+  },
+  "pip_missionC_mg2_02": {
+    "file": "pip_missionC_mg2_02.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 48,
+    "bytes": 25344,
+    "text": "Drag each cable to the socket of the same color!"
+  },
+  "pip_missionC_mg2_03": {
+    "file": "pip_missionC_mg2_03.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 44,
+    "bytes": 26880,
+    "text": "Tip: each cable and socket has a letter too."
+  },
+  "sam_moon_keys_01": {
+    "file": "sam_moon_keys_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 47,
+    "bytes": 21312,
+    "text": "Grab the rover keys. Let's go find that signal."
+  },
+  "sam_moon_reward_01": {
+    "file": "sam_moon_reward_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 41,
+    "bytes": 15744,
+    "text": "Pragyan gave you something for your trip."
+  },
+  "sam_moon_reward_02": {
+    "file": "sam_moon_reward_02.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 41,
+    "bytes": 20928,
+    "text": "An extra battery! You'll need it on Mars."
+  },
+  "sam_moon_split_01": {
+    "file": "sam_moon_split_01.mp3",
+    "voice": "Pippa",
+    "speaker": "SAM",
+    "chars": 46,
+    "bytes": 35712,
+    "text": "Practice time! Tap + and - to share 10 energy."
+  },
+  "pip_split_01": {
+    "file": "pip_split_01.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 38,
+    "bytes": 27264,
+    "text": "A new sol! Let's share today's energy."
+  },
+  "pip_split_food_warn": {
+    "file": "pip_split_food_warn.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 45,
+    "bytes": 34752,
+    "text": "Food only grows if air & water is 20 or more!"
+  },
+  "pip_report_ok": {
+    "file": "pip_report_ok.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 35,
+    "bytes": 20736,
+    "text": "Good job! The crew is safe for now."
+  },
+  "pip_report_waste": {
+    "file": "pip_report_waste.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 53,
+    "bytes": 38208,
+    "text": "Some sunlight was wasted. Use your energy or lose it!"
+  },
+  "pip_report_storm": {
+    "file": "pip_report_storm.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 52,
+    "bytes": 30528,
+    "text": "A storm hit our shield. DONKI can warn us next time."
+  },
+  "pip_report_low": {
+    "file": "pip_report_low.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 52,
+    "bytes": 25728,
+    "text": "Something is running low. Give it more energy today!"
+  },
+  "pip_rescue_once": {
+    "file": "pip_rescue_once.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 49,
+    "bytes": 26880,
+    "text": "The crew can only do this once. Let's be careful!"
+  },
+  "pip_rescue_none": {
+    "file": "pip_rescue_none.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 46,
+    "bytes": 31104,
+    "text": "Oh no. The crew has no reserves left to share."
+  },
+  "pip_time_up": {
+    "file": "pip_time_up.mp3",
+    "voice": "Mark",
+    "speaker": "PIP",
+    "chars": 50,
+    "bytes": 40320,
+    "text": "Our time on Mars is over. Let's see what we fixed!"
+  }
+}

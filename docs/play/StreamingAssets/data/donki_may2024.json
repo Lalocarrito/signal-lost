@@ -1,0 +1,50 @@
+[
+    {
+        "type": "solar_flare",
+        "flareClass": "M1.0",
+        "summary": "Solar flare, class M1.0, peaked at 2024-05-16T08:04Z.",
+        "source": "NASA DONKI",
+        "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/FLR/30931/-1",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "solar_flare",
+        "flareClass": "M3.1",
+        "summary": "Solar flare, class M3.1, peaked at 2024-05-09T11:56Z.",
+        "source": "NASA DONKI",
+        "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/FLR/30630/-1",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "solar_flare",
+        "flareClass": "M5.9",
+        "summary": "Solar flare, class M5.9, peaked at 2024-05-10T14:11Z.",
+        "source": "NASA DONKI",
+        "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/FLR/30680/-1",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "solar_flare",
+        "flareClass": "M8.8",
+        "summary": "Solar flare, class M8.8, peaked at 2024-05-11T15:25Z.",
+        "source": "NASA DONKI",
+        "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/FLR/30729/-1",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "solar_flare",
+        "flareClass": "X2.2",
+        "summary": "Solar flare, class X2.2, peaked at 2024-05-09T09:13Z.",
+        "source": "NASA DONKI",
+        "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/FLR/30605/-1",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "solar_flare",
+        "flareClass": "X8.7",
+        "summary": "Solar flare, class X8.7, peaked at 2024-05-14T16:51Z.",
+        "source": "NASA DONKI",
+        "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/FLR/30849/-1",
+        "retrieved": "2026-11-14"
+    }
+]

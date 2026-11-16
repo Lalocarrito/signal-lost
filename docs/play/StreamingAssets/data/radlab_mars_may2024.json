@@ -1,0 +1,62 @@
+[
+    {
+        "type": "radiation_dose",
+        "absorbedDoseRate": 3.742363,
+        "unit": "uGy/h",
+        "instrument": "MSL-RAD",
+        "summary": "Curiosity RAD, Mars surface: 3.74 uGy/h at 2024-05-18T00:00:45.",
+        "source": "NASA OSDR RadLab",
+        "url": "https://visualization.osdr.nasa.gov/radlab/api/?trajectory=Mars%20surface&timestamp%3E=2024-05-18&timestamp%3C2024-05-23&instrument&absorbed_dose_rate&format=html",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "radiation_dose",
+        "absorbedDoseRate": 15.095686,
+        "unit": "uGy/h",
+        "instrument": "MSL-RAD",
+        "summary": "Curiosity RAD, Mars surface: 15.1 uGy/h at 2024-05-21T03:17:23.",
+        "source": "NASA OSDR RadLab",
+        "url": "https://visualization.osdr.nasa.gov/radlab/api/?trajectory=Mars%20surface&timestamp%3E=2024-05-18&timestamp%3C2024-05-23&instrument&absorbed_dose_rate&format=html",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "radiation_dose",
+        "absorbedDoseRate": 28.936375,
+        "unit": "uGy/h",
+        "instrument": "MSL-RAD",
+        "summary": "Curiosity RAD, Mars surface: 28.94 uGy/h at 2024-05-20T19:44:57.",
+        "source": "NASA OSDR RadLab",
+        "url": "https://visualization.osdr.nasa.gov/radlab/api/?trajectory=Mars%20surface&timestamp%3E=2024-05-18&timestamp%3C2024-05-23&instrument&absorbed_dose_rate&format=html",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "radiation_dose",
+        "absorbedDoseRate": 45.00169,
+        "unit": "uGy/h",
+        "instrument": "MSL-RAD",
+        "summary": "Curiosity RAD, Mars surface: 45 uGy/h at 2024-05-20T15:56:37.",
+        "source": "NASA OSDR RadLab",
+        "url": "https://visualization.osdr.nasa.gov/radlab/api/?trajectory=Mars%20surface&timestamp%3E=2024-05-18&timestamp%3C2024-05-23&instrument&absorbed_dose_rate&format=html",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "radiation_dose",
+        "absorbedDoseRate": 161.61938,
+        "unit": "uGy/h",
+        "instrument": "MSL-RAD",
+        "summary": "Curiosity RAD, Mars surface: 161.62 uGy/h at 2024-05-20T05:48:02.",
+        "source": "NASA OSDR RadLab",
+        "url": "https://visualization.osdr.nasa.gov/radlab/api/?trajectory=Mars%20surface&timestamp%3E=2024-05-18&timestamp%3C2024-05-23&instrument&absorbed_dose_rate&format=html",
+        "retrieved": "2026-11-14"
+    },
+    {
+        "type": "radiation_dose",
+        "absorbedDoseRate": 303.98798,
+        "unit": "uGy/h",
+        "instrument": "MSL-RAD",
+        "summary": "Curiosity RAD, Mars surface: 303.99 uGy/h at 2024-05-20T06:15:19.",
+        "source": "NASA OSDR RadLab",
+        "url": "https://visualization.osdr.nasa.gov/radlab/api/?trajectory=Mars%20surface&timestamp%3E=2024-05-18&timestamp%3C2024-05-23&instrument&absorbed_dose_rate&format=html",
+        "retrieved": "2026-11-14"
+    }
+]

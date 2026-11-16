@@ -1,0 +1,1220 @@
+{
+ "lines": [
+  {
+   "id": "ui_difficulty_cadet",
+   "speaker": "SCREEN",
+   "scene": "intro",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Cadet: I want the whole package."
+  },
+  {
+   "id": "ui_difficulty_commander",
+   "speaker": "SCREEN",
+   "scene": "intro",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Commander: I'm ready for a challenge."
+  },
+  {
+   "id": "ui_name_prompt",
+   "speaker": "SCREEN",
+   "scene": "intro",
+   "mode": "all",
+   "voiced": "no",
+   "text": "What's your name, specialist?"
+  },
+  {
+   "id": "ui_tilt_hint",
+   "speaker": "SCREEN",
+   "scene": "moon_antenna",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Tilt your device or use the cursor"
+  },
+  {
+   "id": "ui_message_from_earth",
+   "speaker": "SCREEN",
+   "scene": "arrival_msg",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Message from Earth. Sent {DELAY} minutes ago."
+  },
+  {
+   "id": "sam_prologue_01",
+   "speaker": "SAM",
+   "scene": "prologue",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Welcome, {PLAYER}. I'm Sam, your flight director here on Earth."
+  },
+  {
+   "id": "sam_prologue_02",
+   "speaker": "SAM",
+   "scene": "prologue",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Robots on the Moon and Mars are getting things ready for the next astronauts."
+  },
+  {
+   "id": "sam_prologue_03",
+   "speaker": "SAM",
+   "scene": "prologue",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "But four of them stopped sending signals. We don't know why yet."
+  },
+  {
+   "id": "sam_prologue_04",
+   "speaker": "SAM",
+   "scene": "prologue",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "You're our robot specialist. Your job: find them and fix them."
+  },
+  {
+   "id": "sam_prologue_05",
+   "speaker": "SAM",
+   "scene": "prologue",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "First stop: the Moon. Let's see what you learned in training."
+  },
+  {
+   "id": "sam_moon_arrival_01",
+   "speaker": "SAM",
+   "scene": "moon_arrival",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Moon base online. Our signal delay is only 1.3 seconds."
+  },
+  {
+   "id": "sam_moon_arrival_02",
+   "speaker": "SAM",
+   "scene": "moon_arrival",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "That means I can help you almost live. Let's use it!"
+  },
+  {
+   "id": "sam_moon_energy_01",
+   "speaker": "SAM",
+   "scene": "moon_energy",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Every day starts with energy. Split it between life support, radio and shielding."
+  },
+  {
+   "id": "sam_moon_energy_02",
+   "speaker": "SAM",
+   "scene": "moon_energy",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Up here, nothing is free. Everything you do costs something."
+  },
+  {
+   "id": "sam_moon_energy_03",
+   "speaker": "SAM",
+   "scene": "moon_energy",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Try giving life support the most. Your crew needs air and water first. Don't forget the oxygen."
+  },
+  {
+   "id": "sam_moon_cables_01",
+   "speaker": "SAM",
+   "scene": "moon_cables",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Moon dust is sharp and sticky. It's covering the cables in your solar panels."
+  },
+  {
+   "id": "sam_moon_cables_02",
+   "speaker": "SAM",
+   "scene": "moon_cables",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Connect the cables to fix them. Working panels make more energy."
+  },
+  {
+   "id": "sam_moon_cables_03",
+   "speaker": "SAM",
+   "scene": "moon_cables",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "That's it. Let's go back."
+  },
+  {
+   "id": "sam_moon_antenna_01",
+   "speaker": "SAM",
+   "scene": "moon_antenna",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Your oxygen tank fills when you are inside the station."
+  },
+  {
+   "id": "sam_moon_antenna_02",
+   "speaker": "SAM",
+   "scene": "moon_antenna",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "I hear a weak signal. Point the antenna at it."
+  },
+  {
+   "id": "sam_moon_antenna_03",
+   "speaker": "SAM",
+   "scene": "moon_antenna",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Tilt to steer. Driving uses energy, so take the short way."
+  },
+  {
+   "id": "sam_moon_antenna_04",
+   "speaker": "SAM",
+   "scene": "moon_antenna",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "When the signal turns green, hold still."
+  },
+  {
+   "id": "sam_moon_antenna_05",
+   "speaker": "SAM",
+   "scene": "moon_antenna",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Got it! That's Pragyan. Take the rover and go find it."
+  },
+  {
+   "id": "sam_moon_repair_01",
+   "speaker": "SAM",
+   "scene": "moon_repair",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "There it is. Open its file and let's see what's wrong."
+  },
+  {
+   "id": "sam_moon_repair_02",
+   "speaker": "SAM",
+   "scene": "moon_repair",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Let's connect the cables and point the panel so it faces the sun."
+  },
+  {
+   "id": "sam_moon_repair_03",
+   "speaker": "SAM",
+   "scene": "moon_repair",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "It's beeping again! Great work, {PLAYER}."
+  },
+  {
+   "id": "sam_moon_repair_04",
+   "speaker": "SAM",
+   "scene": "moon_repair",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Pragyan gave you something for your trip: an extra battery."
+  },
+  {
+   "id": "sam_moon_close_01",
+   "speaker": "SAM",
+   "scene": "moon_close",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Did you know? On the Moon, the Sun stays up for about two weeks. Then it's night for two weeks."
+  },
+  {
+   "id": "sam_moon_close_02",
+   "speaker": "SAM",
+   "scene": "moon_close",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Can you imagine how a base could stay warm during that long night?"
+  },
+  {
+   "id": "sam_moon_pack_01",
+   "speaker": "SAM",
+   "scene": "moon_pack",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "You're ready for Mars. Pack your energy, water and air for the trip."
+  },
+  {
+   "id": "sam_moon_pack_02",
+   "speaker": "SAM",
+   "scene": "moon_pack",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "This time your crew will be with you."
+  },
+  {
+   "id": "sam_moon_pack_03",
+   "speaker": "SAM",
+   "scene": "moon_pack",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Pack too little and you'll arrive short. Pack too much and the ship gets heavy."
+  },
+  {
+   "id": "sam_moon_keys_01",
+   "speaker": "SAM",
+   "scene": "moon_keys",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Grab the rover keys. Let's go find that signal."
+  },
+  {
+   "id": "sam_moon_reward_01",
+   "speaker": "SAM",
+   "scene": "moon_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Pragyan gave you something for your trip."
+  },
+  {
+   "id": "sam_moon_reward_02",
+   "speaker": "SAM",
+   "scene": "moon_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "An extra battery! You'll need it on Mars."
+  },
+  {
+   "id": "sam_trip_01",
+   "speaker": "SAM",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Mars is far. The trip takes months, so we'll skip to the good part."
+  },
+  {
+   "id": "sam_trip_02",
+   "speaker": "SAM",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Tilt to keep the ship on its path. Every fix uses a little fuel."
+  },
+  {
+   "id": "sam_trip_03",
+   "speaker": "SAM",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "One more thing. From now on, my messages will take minutes to reach you."
+  },
+  {
+   "id": "sam_trip_04",
+   "speaker": "SAM",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "But don't worry, you won't be alone. The base AI will help you. Good luck, {PLAYER}."
+  },
+  {
+   "id": "pip_arrival_01",
+   "speaker": "PIP",
+   "scene": "arrival",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Hi, {PLAYER}! I'm your Planetary Interface Partner, but you can call me PIP. I run the base, watch the oxygen and tell jokes."
+  },
+  {
+   "id": "pip_arrival_02",
+   "speaker": "PIP",
+   "scene": "arrival",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Two of those I'm very good at."
+  },
+  {
+   "id": "pip_arrival_03",
+   "speaker": "PIP",
+   "scene": "arrival",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Welcome to Mars! Here a day is called a sol. It lasts 24 hours and 39 minutes."
+  },
+  {
+   "id": "pip_arrival_04",
+   "speaker": "PIP",
+   "scene": "arrival",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "This is your crew. They count on you for air, water and food from the greenhouse."
+  },
+  {
+   "id": "pip_arrival_05",
+   "speaker": "PIP",
+   "scene": "arrival",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Three robots on Mars stopped talking. Sam sent their files. You pick who to help first."
+  },
+  {
+   "id": "pip_arrival_06",
+   "speaker": "PIP",
+   "scene": "arrival",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Tip: tap the robot and read each file. It says how that robot can help us."
+  },
+  {
+   "id": "sam_arrival_msg_01",
+   "speaker": "SAM",
+   "scene": "arrival_msg",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "You made it! I can't answer fast anymore. Trust PIP, and trust yourself."
+  },
+  {
+   "id": "pip_arrival_msg_02",
+   "speaker": "PIP",
+   "scene": "arrival_msg",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "So basically if I tell Sam a joke now, Sam laughs in {DELAY} minutes. Which is still worth it."
+  },
+  {
+   "id": "sam_missionA_alert_01",
+   "speaker": "SAM",
+   "scene": "missionA_alert",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Curiosity went quiet after a big solar storm."
+  },
+  {
+   "id": "sam_missionA_alert_02",
+   "speaker": "SAM",
+   "scene": "missionA_alert",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Another storm may be coming. Check DONKI before you go outside."
+  },
+  {
+   "id": "pip_missionA_alert_03",
+   "speaker": "PIP",
+   "scene": "missionA_alert",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "DONKI is NASA's space weather database. It tracks storms that come from the Sun."
+  },
+  {
+   "id": "pip_missionA_prep_01",
+   "speaker": "PIP",
+   "scene": "missionA_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Here on Mars, we must be careful when going outside."
+  },
+  {
+   "id": "pip_missionA_prep_02",
+   "speaker": "PIP",
+   "scene": "missionA_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Let's check the forecast on DONKI."
+  },
+  {
+   "id": "pip_missionA_prep_03",
+   "speaker": "PIP",
+   "scene": "missionA_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Solar storm ahead. Good thing I wear sunscreen. ...I'm a computer. I don't."
+  },
+  {
+   "id": "pip_missionA_prep_04",
+   "speaker": "PIP",
+   "scene": "missionA_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Mars has very thin air and no magnetic shield like Earth's. More radiation gets through."
+  },
+  {
+   "id": "pip_missionA_prep_05",
+   "speaker": "PIP",
+   "scene": "missionA_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Let's make our shielding stronger before we leave."
+  },
+  {
+   "id": "pip_missionA_prep_06",
+   "speaker": "PIP",
+   "scene": "missionA_prep",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Tip: shielding costs energy. Do it the sol before the storm."
+  },
+  {
+   "id": "pip_missionA_exit_01",
+   "speaker": "PIP",
+   "scene": "missionA_exit",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "The storm passed. It's safe to drive now."
+  },
+  {
+   "id": "pip_missionA_exit_02",
+   "speaker": "PIP",
+   "scene": "missionA_exit",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Mars dust gets everywhere. I found some in my code."
+  },
+  {
+   "id": "pip_missionA_exit_03",
+   "speaker": "PIP",
+   "scene": "missionA_exit",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Here's Curiosity. Its file says: a solar storm scrambled its computer and left it in safe mode. Let's fix it."
+  },
+  {
+   "id": "pip_missionA_repair_01",
+   "speaker": "PIP",
+   "scene": "missionA_repair",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Connect the device to the robot to access the terminal."
+  },
+  {
+   "id": "pip_missionA_repair_02",
+   "speaker": "PIP",
+   "scene": "missionA_repair",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Curiosity uses 2 computers. Stop the broken one, and start the other computer."
+  },
+  {
+   "id": "pip_missionA_reward_01",
+   "speaker": "PIP",
+   "scene": "missionA_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Curiosity is back! It will warn us about storms one sol earlier."
+  },
+  {
+   "id": "sam_missionA_reward_02",
+   "speaker": "SAM",
+   "scene": "missionA_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Checking the forecast was the right call. Real teams do it every day."
+  },
+  {
+   "id": "sam_missionA_reward_03",
+   "speaker": "SAM",
+   "scene": "missionA_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Did you know? Earth's magnetic field blocks a lot of space radiation. Mars doesn't have one like it."
+  },
+  {
+   "id": "sam_missionA_reward_04",
+   "speaker": "SAM",
+   "scene": "missionA_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Do you think that's what makes the northern lights on Earth?"
+  },
+  {
+   "id": "sam_missionB_alert_01",
+   "speaker": "SAM",
+   "scene": "missionB_alert",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Phoenix was searching for ice under the ground. Then it stopped."
+  },
+  {
+   "id": "sam_missionB_alert_02",
+   "speaker": "SAM",
+   "scene": "missionB_alert",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Your crew needs water too. Keep the tanks full before you go."
+  },
+  {
+   "id": "pip_missionB_prep_01",
+   "speaker": "PIP",
+   "scene": "missionB_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "We can recycle water or dig for ice. Recycling costs less. Ice gives more."
+  },
+  {
+   "id": "pip_missionB_prep_02",
+   "speaker": "PIP",
+   "scene": "missionB_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "This water has been recycled so many times, it deserves a medal."
+  },
+  {
+   "id": "pip_missionB_prep_03",
+   "speaker": "PIP",
+   "scene": "missionB_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Remember: the greenhouse needs water too. No water, no salad."
+  },
+  {
+   "id": "pip_missionB_prep_04",
+   "speaker": "PIP",
+   "scene": "missionB_prep",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Tip: keep life support above half before you drive out."
+  },
+  {
+   "id": "pip_missionB_exit_01",
+   "speaker": "PIP",
+   "scene": "missionB_exit",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Here's Phoenix. Its file says: hard ice jammed its scoop, and sticky dirt clogged its oven screen. Let's fix it."
+  },
+  {
+   "id": "pip_missionB_reward_01",
+   "speaker": "PIP",
+   "scene": "missionB_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Phoenix found ice again! We'll get extra water every sol."
+  },
+  {
+   "id": "pip_missionB_reward_02",
+   "speaker": "PIP",
+   "scene": "missionB_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Fresh lettuce on Mars! Lettuce celebrate."
+  },
+  {
+   "id": "sam_missionB_reward_03",
+   "speaker": "SAM",
+   "scene": "missionB_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Well, that sounds nice."
+  },
+  {
+   "id": "sam_missionB_reward_04",
+   "speaker": "SAM",
+   "scene": "missionB_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Did you know? The Space Station recycles about 98 of every 100 drops of water."
+  },
+  {
+   "id": "sam_missionB_reward_05",
+   "speaker": "SAM",
+   "scene": "missionB_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Can you find out where Mars keeps its ice? It could be useful in future missions."
+  },
+  {
+   "id": "sam_missionC_alert_01",
+   "speaker": "SAM",
+   "scene": "missionC_alert",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "A dust storm is covering the sky. Opportunity went dark, and your panels are getting weak."
+  },
+  {
+   "id": "sam_missionC_alert_02",
+   "speaker": "SAM",
+   "scene": "missionC_alert",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Keep the base warm first. Then go find Opportunity."
+  },
+  {
+   "id": "pip_missionC_prep_01",
+   "speaker": "PIP",
+   "scene": "missionC_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Sunlight on Mars is less than half as strong as on Earth. With dust, it's even weaker."
+  },
+  {
+   "id": "pip_missionC_prep_02",
+   "speaker": "PIP",
+   "scene": "missionC_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "We can repair the panels, or start the small reactor. The reactor takes two sols."
+  },
+  {
+   "id": "pip_missionC_prep_03",
+   "speaker": "PIP",
+   "scene": "missionC_prep",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "I'm not lazy. I'm in power-saving mode."
+  },
+  {
+   "id": "pip_missionC_prep_04",
+   "speaker": "PIP",
+   "scene": "missionC_prep",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Tip: start the reactor early. It's slow, but it works in any weather."
+  },
+  {
+   "id": "pip_missionC_exit_01",
+   "speaker": "PIP",
+   "scene": "missionC_exit",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Here's Opportunity. Its file says: a dust storm covered its solar panels."
+  },
+  {
+   "id": "pip_missionC_exit_02",
+   "speaker": "PIP",
+   "scene": "missionC_exit",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Have you tried turning it off and on again? Oh wait. That's literally our job."
+  },
+  {
+   "id": "pip_missionC_reward_01",
+   "speaker": "PIP",
+   "scene": "missionC_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Opportunity is online! The base gets extra energy every sol."
+  },
+  {
+   "id": "sam_missionC_reward_02",
+   "speaker": "SAM",
+   "scene": "missionC_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Did you know? NASA is working on small nuclear reactors to power future bases on the Moon and Mars."
+  },
+  {
+   "id": "sam_missionC_reward_03",
+   "speaker": "SAM",
+   "scene": "missionC_reward",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Can you imagine how long the biggest dust storms on Mars can last?"
+  },
+  {
+   "id": "pip_alert_energy",
+   "speaker": "PIP",
+   "scene": "alerts",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Energy is getting low. Let's save some for tonight."
+  },
+  {
+   "id": "pip_alert_lifesupport",
+   "speaker": "PIP",
+   "scene": "alerts",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Air and water are dropping. The crew needs you to fix that first."
+  },
+  {
+   "id": "pip_alert_shield",
+   "speaker": "PIP",
+   "scene": "alerts",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Our shielding is weak. Maybe stay inside until we fix it."
+  },
+  {
+   "id": "pip_alert_food",
+   "speaker": "PIP",
+   "scene": "alerts",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Food is running low. The greenhouse needs water to grow more."
+  },
+  {
+   "id": "pip_rescue_01_lifesupport",
+   "speaker": "PIP",
+   "scene": "rescue",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Uh-oh. We ran out of air and water."
+  },
+  {
+   "id": "pip_rescue_01_food",
+   "speaker": "PIP",
+   "scene": "rescue",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Uh-oh. We ran out of food."
+  },
+  {
+   "id": "pip_rescue_01_shield",
+   "speaker": "PIP",
+   "scene": "rescue",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Uh-oh. We ran out of shielding."
+  },
+  {
+   "id": "pip_rescue_02",
+   "speaker": "PIP",
+   "scene": "rescue",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "The crew shared their reserves to help us. We lost a sol, but everyone is okay."
+  },
+  {
+   "id": "pip_rescue_03",
+   "speaker": "PIP",
+   "scene": "rescue",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Let's plan a little better this time. You've got this!"
+  },
+  {
+   "id": "ui_paused_lifesupport",
+   "speaker": "SCREEN",
+   "scene": "commander",
+   "mode": "commander",
+   "voiced": "no",
+   "text": "Mission paused: you ran out of air and water."
+  },
+  {
+   "id": "ui_paused_food",
+   "speaker": "SCREEN",
+   "scene": "commander",
+   "mode": "commander",
+   "voiced": "no",
+   "text": "Mission paused: you ran out of food."
+  },
+  {
+   "id": "ui_paused_shield",
+   "speaker": "SCREEN",
+   "scene": "commander",
+   "mode": "commander",
+   "voiced": "no",
+   "text": "Mission paused: you ran out of shielding."
+  },
+  {
+   "id": "pip_commander_01_lifesupport",
+   "speaker": "PIP",
+   "scene": "commander",
+   "mode": "commander",
+   "voiced": "yes",
+   "text": "We had to bring the crew inside. Here's what happened: the air and water ran out before we could refill them."
+  },
+  {
+   "id": "pip_commander_01_food",
+   "speaker": "PIP",
+   "scene": "commander",
+   "mode": "commander",
+   "voiced": "yes",
+   "text": "We had to bring the crew inside. Here's what happened: the crew ate more than the greenhouse could grow."
+  },
+  {
+   "id": "pip_commander_01_shield",
+   "speaker": "PIP",
+   "scene": "commander",
+   "mode": "commander",
+   "voiced": "yes",
+   "text": "We had to bring the crew inside. Here's what happened: the shielding got too low, and too much radiation got through."
+  },
+  {
+   "id": "pip_commander_02",
+   "speaker": "PIP",
+   "scene": "commander",
+   "mode": "commander",
+   "voiced": "yes",
+   "text": "Every astronaut learns from a tough sol. Want to try again?"
+  },
+  {
+   "id": "pip_final_01",
+   "speaker": "PIP",
+   "scene": "final",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "That's all of them, {PLAYER}! Every robot is talking again."
+  },
+  {
+   "id": "sam_final_02",
+   "speaker": "SAM",
+   "scene": "final",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "{PLAYER}, we got signals from all four robots. Everyone here is cheering."
+  },
+  {
+   "id": "sam_final_03",
+   "speaker": "SAM",
+   "scene": "final",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Thanks to you, the next crew can come to Mars. You're not a cadet anymore."
+  },
+  {
+   "id": "pip_final_04",
+   "speaker": "PIP",
+   "scene": "final",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "I'd hug you, but I don't have arms. Consider this a virtual hug."
+  },
+  {
+   "id": "pip_final_05",
+   "speaker": "PIP",
+   "scene": "final",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Want to try a different order? Or switch to Commander mode?"
+  },
+  {
+   "id": "pip_missionB_mg1_01",
+   "speaker": "PIP",
+   "scene": "missionB_minigame1",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Hard ice is stuck in Phoenix's scoop."
+  },
+  {
+   "id": "pip_missionB_mg1_02",
+   "speaker": "PIP",
+   "scene": "missionB_minigame1",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Tap the ice and dirt with the hammer to break them off!"
+  },
+  {
+   "id": "pip_missionB_mg1_03",
+   "speaker": "PIP",
+   "scene": "missionB_minigame1",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Tip: ice needs 3 hits. Dirt needs only 1."
+  },
+  {
+   "id": "pip_missionB_mg2_01",
+   "speaker": "PIP",
+   "scene": "missionB_minigame2",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Sticky dirt is clogging Phoenix's oven screen."
+  },
+  {
+   "id": "pip_missionB_mg2_02",
+   "speaker": "PIP",
+   "scene": "missionB_minigame2",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Tap fast, press SPACE, or shake your device to clean it!"
+  },
+  {
+   "id": "pip_missionB_mg2_03",
+   "speaker": "PIP",
+   "scene": "missionB_minigame2",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "The real Phoenix team shook its screen for several days."
+  },
+  {
+   "id": "pip_missionC_mg1_01",
+   "speaker": "PIP",
+   "scene": "missionC_minigame1",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Dust is covering Opportunity's solar panels."
+  },
+  {
+   "id": "pip_missionC_mg1_02",
+   "speaker": "PIP",
+   "scene": "missionC_minigame1",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Hold and swipe over the panels to brush the dust away!"
+  },
+  {
+   "id": "pip_missionC_mg1_03",
+   "speaker": "PIP",
+   "scene": "missionC_minigame1",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Tip: just clicking won't work. You have to swipe."
+  },
+  {
+   "id": "pip_missionC_mg2_01",
+   "speaker": "PIP",
+   "scene": "missionC_minigame2",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Opportunity's battery cables came loose."
+  },
+  {
+   "id": "pip_missionC_mg2_02",
+   "speaker": "PIP",
+   "scene": "missionC_minigame2",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Drag each cable to the socket of the same color!"
+  },
+  {
+   "id": "pip_missionC_mg2_03",
+   "speaker": "PIP",
+   "scene": "missionC_minigame2",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Tip: each cable and socket has a letter too."
+  },
+  {
+   "id": "ui_trip_pack_title",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Pack for Mars"
+  },
+  {
+   "id": "ui_trip_life",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Life support (air + water)"
+  },
+  {
+   "id": "ui_trip_food",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Food"
+  },
+  {
+   "id": "ui_trip_weight",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Ship weight"
+  },
+  {
+   "id": "ui_trip_weight_light",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Light: you'll arrive short."
+  },
+  {
+   "id": "ui_trip_weight_ok",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Good balance!"
+  },
+  {
+   "id": "ui_trip_weight_heavy",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Heavy: steering will use more fuel."
+  },
+  {
+   "id": "ui_trip_launch",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Launch!"
+  },
+  {
+   "id": "ui_trip_fuel",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Fuel"
+  },
+  {
+   "id": "ui_trip_mars",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Mars"
+  },
+  {
+   "id": "ui_trip_hint_tilt",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Tilt your device to steer."
+  },
+  {
+   "id": "ui_trip_hint_drag",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Drag your finger or use the arrows to steer."
+  },
+  {
+   "id": "ui_trip_tap_start",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Tap to start"
+  },
+  {
+   "id": "ui_trip_on_path",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "On path"
+  },
+  {
+   "id": "ui_trip_off_path",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Off path! Steer back."
+  },
+  {
+   "id": "ui_trip_result_title",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "You reached Mars!"
+  },
+  {
+   "id": "ui_trip_result_packed",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Packed: +{0} life support, +{1} food"
+  },
+  {
+   "id": "ui_trip_result_lost",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Off path: the crew used {0} on the longer trip."
+  },
+  {
+   "id": "ui_trip_result_perfect",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Perfect path! Nothing lost."
+  },
+  {
+   "id": "ui_trip_result_fuel",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "You ran out of fuel. A lighter ship uses less."
+  },
+  {
+   "id": "ui_trip_tap_continue",
+   "speaker": "SCREEN",
+   "scene": "trip",
+   "mode": "all",
+   "voiced": "no",
+   "text": "Tap to continue"
+  },
+  {
+   "id": "sam_moon_split_01",
+   "speaker": "SAM",
+   "scene": "moon_energy",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Practice time! Tap + and - to share 10 energy."
+  },
+  {
+   "id": "pip_split_01",
+   "speaker": "PIP",
+   "scene": "base_split",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "A new sol! Let's share today's energy."
+  },
+  {
+   "id": "pip_split_food_warn",
+   "speaker": "PIP",
+   "scene": "base_split",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Food only grows if air & water is 20 or more!"
+  },
+  {
+   "id": "pip_report_ok",
+   "speaker": "PIP",
+   "scene": "sol_report",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Good job! The crew is safe for now."
+  },
+  {
+   "id": "pip_report_waste",
+   "speaker": "PIP",
+   "scene": "sol_report",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Some sunlight was wasted. Use your energy or lose it!"
+  },
+  {
+   "id": "pip_report_storm",
+   "speaker": "PIP",
+   "scene": "sol_report",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "A storm hit our shield. DONKI can warn us next time."
+  },
+  {
+   "id": "pip_report_low",
+   "speaker": "PIP",
+   "scene": "sol_report",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Something is running low. Give it more energy today!"
+  },
+  {
+   "id": "pip_rescue_once",
+   "speaker": "PIP",
+   "scene": "rescue",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "The crew can only do this once. Let's be careful!"
+  },
+  {
+   "id": "pip_rescue_none",
+   "speaker": "PIP",
+   "scene": "rescue",
+   "mode": "cadet",
+   "voiced": "yes",
+   "text": "Oh no. The crew has no reserves left to share."
+  },
+  {
+   "id": "pip_time_up",
+   "speaker": "PIP",
+   "scene": "base_time_up",
+   "mode": "all",
+   "voiced": "yes",
+   "text": "Our time on Mars is over. Let's see what we fixed!"
+  }
+ ]
+}
