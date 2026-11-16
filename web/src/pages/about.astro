@@ -1,5 +1,5 @@
 ---
-// ABOUT: el reto, qué practican los niños y el equipo.
+// ABOUT
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Sky from '../components/Sky.astro';
 import { url } from '../lib/url';
@@ -276,7 +276,7 @@ const stars = [
     gap: 28px;
   }
 
-  /* Tarjetas del equipo: derechas y alargadas, con los links abajo */
+  /* Tarjetas del equipo: con los links abajo */
   .member {
     min-height: 360px;
     display: flex;
@@ -287,7 +287,7 @@ const stars = [
     transform: none;
   }
 
-  /* Foto del miembro (si tiene "photo" en team.js) */
+  /* Foto del miembro (team.js) */
   .badge.photo {
     width: 96px;
     height: 96px;
@@ -417,13 +417,12 @@ const stars = [
     object-fit: contain;
   }
 
-  /* "Built with" arriba de los miembros */
+  /* "Built with" arriba del equipo */
   .built-top {
     margin-top: 60px;
     padding-bottom: 0;
   }
 
-  /* Menos espacio entre "Built with" y "Meet the team" */
   .built-top + .crew-section {
     margin-top: 40px;
   }
