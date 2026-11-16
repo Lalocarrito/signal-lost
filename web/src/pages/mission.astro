@@ -1,0 +1,281 @@
+---
+// SIGNAL LOST (Mission Control): aquí se juega.
+// El juego de Unity WebGL vive en public/play/ (se publica en /signal-lost/play/).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/url';
+
+const gameSrc = url('play/index.html');
+
+const tips = [
+  {
+    icon: 'images/hand-point.png',
+    title: 'Tilt or use the cursor',
+    text: 'Tilt your tablet or phone to aim the antenna and steer the rover. On a laptop, move the mouse or use the arrow keys.',
+    tilt: 'tilt-left',
+  },
+  {
+    icon: 'images/star.webp',
+    title: 'Pick your level',
+    html: '<strong>Cadet</strong> gives you extra tips. <strong>Commander</strong> is for a real challenge. You can try both!',
+    tilt: 'tilt-right',
+  },
+  {
+    icon: 'images/walkie.png',
+    title: 'Tap to hear Sam',
+    text: 'Sam is your flight director on Earth. Tap anywhere on the screen to read the next message.',
+    tilt: 'tilt-soft',
+  },
+];
+---
+
+<BaseLayout title="Mission Control" active="mission" bg="mission">
+  <section class="intro container">
+    <p class="kicker transmission">— transmission open —</p>
+    <h1 class="page-title">Mission Control</h1>
+    <p class="lead">Your mission starts here. Press play when you're ready, specialist!</p>
+  </section>
+
+  <section class="game container" aria-label="Game">
+    <div class="game-frame" data-game data-src={gameSrc}>
+      <div class="game-placeholder">
+        <p class="placeholder-note">✦ The mission is ready on the launch pad ✦</p>
+        <button type="button" class="btn-mission" data-start>Start Mission</button>
+      </div>
+    </div>
+
+    <div class="signal-strip">
+      <div class="signal">
+        <span class="bars" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span class="signal-text">Signal: strong · ready to launch</span>
+      </div>
+      <button type="button" class="btn-dark" data-fullscreen>Full Screen</button>
+    </div>
+  </section>
+
+  <section class="before container">
+    <div class="before-head">
+      <h2 class="section-title">Before you launch</h2>
+      <img class="patch" src={url('images/patch.webp')} alt="Signal Lost mission patch: a rover on Mars with a signal arc from Earth" width="600" height="407" loading="lazy" />
+    </div>
+    <div class="tips">
+      {
+        tips.map((t) => (
+          <article class:list={['paper-card', t.tilt]}>
+            <img class="card-icon" src={url(t.icon)} alt="" />
+            <h3>{t.title}</h3>
+            {t.html ? <p set:html={t.html} /> : <p>{t.text}</p>}
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="devices container">
+    <p>Works on laptop, tablet and phone. If your device asks to use motion, tap Allow to steer by tilting. We recommend Chrome Explorer for a better experience.</p>
+  </section>
+</BaseLayout>
+
+<script>
+  // Carga el juego solo cuando el niño presiona Start Mission (así la página abre rápido).
+  const frame = document.querySelector<HTMLElement>('[data-game]');
+  const startBtn = document.querySelector<HTMLButtonElement>('[data-start]');
+  const fullBtn = document.querySelector<HTMLButtonElement>('[data-fullscreen]');
+
+  startBtn?.addEventListener('click', () => {
+    if (!frame) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = frame.dataset.src ?? '';
+    iframe.title = 'Signal Lost game';
+    iframe.allow = 'fullscreen; autoplay; gyroscope; accelerometer';
+    iframe.setAttribute('allowfullscreen', '');
+    frame.querySelector('.game-placeholder')?.remove();
+    frame.classList.add('is-playing');
+    frame.appendChild(iframe);
+    iframe.focus();
+  });
+
+  fullBtn?.addEventListener('click', () => {
+    if (!frame) return;
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else if (frame.requestFullscreen) {
+      frame.requestFullscreen();
+    } else if ((frame as any).webkitRequestFullscreen) {
+      (frame as any).webkitRequestFullscreen();
+    }
+  });
+</script>
+
+<style>
+  .intro {
+    position: relative;
+    z-index: 1;
+    padding-top: clamp(40px, 6vw, 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .transmission {
+    color: var(--teal);
+  }
+
+  .lead {
+    max-width: 520px;
+  }
+
+  .game {
+    position: relative;
+    z-index: 1;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .game-frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: var(--cream);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .game-frame.is-playing {
+    background: #000;
+  }
+
+  .game-frame:fullscreen {
+    border-radius: 0;
+  }
+
+  .game-frame :global(iframe) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .game-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .placeholder-note {
+    font-family: var(--font-hand);
+    font-size: clamp(24px, 3vw, 40px);
+    color: #6A4CFF;
+  }
+
+  .signal-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 20px;
+    padding: 12px 22px;
+    background: var(--white);
+    border-radius: 18px;
+  }
+
+  .signal {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 26px;
+  }
+
+  .bars span {
+    width: 8px;
+    border: 2px solid var(--ink);
+    border-radius: 3px;
+    background: var(--green);
+  }
+
+  .bars span:nth-child(1) { height: 10px; }
+  .bars span:nth-child(2) { height: 15px; }
+  .bars span:nth-child(3) { height: 20px; }
+  .bars span:nth-child(4) { height: 26px; background: var(--white); }
+
+  .signal-text {
+    font-family: var(--font-body);
+    font-size: clamp(17px, 2vw, 22px);
+    color: #2A1E8C;
+  }
+
+  .before {
+    position: relative;
+    z-index: 1;
+    margin-top: clamp(70px, 9vw, 110px);
+  }
+
+  .tips {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+  }
+
+  .tips h3 {
+    margin-bottom: 8px;
+  }
+
+  .devices {
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 32px;
+    text-align: center;
+  }
+
+  .devices p {
+    max-width: 480px;
+    font-family: system-ui, sans-serif;
+    font-size: 18px;
+    color: var(--sky-blue);
+  }
+
+  /* Título + parche a un lado */
+  .before-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  .before-head .section-title {
+    margin-bottom: 0;
+  }
+
+  .patch {
+    width: 110px;
+    height: auto;
+    transform: rotate(8deg);
+  }
+</style>

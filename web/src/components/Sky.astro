@@ -1,0 +1,63 @@
+---
+// Estrellas decorativas (el dibujo de la estrella y el destello) encima del fondo.
+// Uso: <Sky stars={[{ x: '6%', y: '12%', size: 48, kind: 'star', rot: -8 }]} />
+// Pon mobile: false en una estrella para esconderla en celular (si tapa el texto).
+import { url } from '../lib/url';
+
+const { stars = [] } = Astro.props;
+const src = {
+  star: url('images/star.webp'),
+  sparkle: url('images/sparkle.png'),
+};
+---
+
+<div class="sky" aria-hidden="true">
+  {
+    stars.map((s, i) => (
+      <img
+        class:list={['sky-star', { 'hide-mobile': s.mobile === false }]}
+        src={src[s.kind ?? 'star']}
+        alt=""
+        loading="lazy"
+        style={`left:${s.x};top:${s.y};width:${s.size}px;--rot:${s.rot ?? 0}deg;animation-delay:${(i * 0.7) % 3}s`}
+      />
+    ))
+  }
+</div>
+
+<style>
+  .sky {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .sky-star {
+    position: absolute;
+    height: auto;
+    transform: rotate(var(--rot));
+    animation: twinkle 3.6s ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      transform: rotate(var(--rot)) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: rotate(calc(var(--rot) + 8deg)) scale(0.9);
+      opacity: 0.8;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .sky-star {
+      max-width: 34px;
+    }
+    .hide-mobile {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,46 @@
+---
+// Plantilla base: nav arriba, fondo espacial en medio y footer abajo.
+// Uso:
+// <BaseLayout title="Data" active="data" bg="data"> ...contenido... </BaseLayout>
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { url } from '../lib/url';
+
+const {
+  title = 'Signal Lost',
+  description = 'Signal Lost: Moon to Mars. Repair robots, manage your base and survive space. A game for the NASA Space Apps Challenge 2026.',
+  active = 'home',
+  bg = 'home', // home | mission | data
+} = Astro.props;
+
+const backgrounds = {
+  home: url('images/bg-home.webp'),
+  mission: url('images/bg-mission.webp'),
+  data: url('images/bg-data.webp'),
+};
+const pageTitle = title === 'Signal Lost' ? 'Signal Lost: Moon to Mars' : `${title} · Signal Lost`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href={url('favicon.png')} />
+    <link rel="preload" href={url('fonts/up-and-down.woff2')} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={url('fonts/kg-blank-space-solid.woff2')} as="font" type="font/woff2" crossorigin />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={url('images/patch.webp')} />
+  </head>
+  <body>
+    <Nav active={active} />
+    <main class="space" style={`--bg:url('${backgrounds[bg] ?? backgrounds.home}')`}>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

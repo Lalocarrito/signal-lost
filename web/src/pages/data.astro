@@ -1,0 +1,363 @@
+---
+// DATA: la ciencia detrás del juego.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sky from '../components/Sky.astro';
+import { url } from '../lib/url';
+import { robots } from '../data/robots.js';
+
+const stars = [
+  { x: '4%', y: '6%', size: 44, kind: 'sparkle', rot: -6 },
+  { x: '91%', y: '12%', size: 50, kind: 'star', rot: 10 },
+  { x: '93%', y: '58%', size: 40, kind: 'sparkle', rot: 8 },
+  { x: '3%', y: '72%', size: 46, kind: 'star', rot: -12 },
+];
+---
+
+<BaseLayout title="Data" active="data" bg="data">
+  <Sky stars={stars} />
+
+  <section class="intro container">
+    <p class="kicker real-data">— real data from space —</p>
+    <h1 class="page-title">The Science Behind the Game</h1>
+    <p class="lead">Everything in Signal Lost is inspired on real robots and real NASA data.</p>
+  </section>
+
+  <!-- Cuánto tarda un mensaje -->
+  <section class="block container">
+    <h2 class="section-title">How long does a message take?</h2>
+    <div class="delay-grid">
+      <article class="paper-card delay tilt-left">
+        <h3 class="delay-label">Earth → Moon</h3>
+        <div class="trip near" aria-hidden="true">
+          <img class="planet-img earth" src={url('images/planets/earth.webp')} alt="" width="320" height="320" />
+          <span class="dash short"></span>
+          <img class="planet-img moon" src={url('images/planets/moon.webp')} alt="" width="320" height="320" />
+        </div>
+        <p class="delay-value">1.3 seconds</p>
+        <p class="delay-note">
+          The Moon is close, so a message arrives almost right away. Sam can help you almost live!
+        </p>
+      </article>
+
+      <article class="paper-card delay tilt-right">
+        <h3 class="delay-label">Earth → Mars</h3>
+        <div class="trip" aria-hidden="true">
+          <img class="planet-img earth" src={url('images/planets/earth.webp')} alt="" width="320" height="320" />
+          <span class="dash"></span>
+          <img class="planet-img mars" src={url('images/planets/mars.webp')} alt="" width="320" height="320" />
+        </div>
+        <p class="delay-value">3 to 22 minutes</p>
+        <p class="delay-note">
+          <img class="inline-icon" src={url('images/walkie.png')} alt="" />
+          A message from Earth can take up to 22 minutes to arrive, so astronauts have to make smart choices on
+          their own. That is why Sam's tips arrive late in the game!
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Clima espacial -->
+  <section class="block container">
+    <h2 class="section-title">Space weather is real</h2>
+    <div class="two-cols">
+      <article class="paper-card tilt-left">
+        <img class="card-icon" src={url('images/sun.png')} alt="" />
+        <span class="source">NASA DONKI · space weather database</span>
+        <h3>Solar storms</h3>
+        <p>
+          In May 2024 the Sun sent out a burst of huge storms, the strongest to hit Earth in about 20 years. The storms
+          in the game come from those real records. When the alarm sounds, shield your base!
+        </p>
+      </article>
+      <article class="paper-card tilt-right">
+        <img class="card-icon" src={url('images/radiation.png')} alt="" />
+        <span class="source">MSL RAD · radiation detector on Curiosity</span>
+        <h3>Radiation on Mars</h3>
+        <p>
+          The Curiosity rover carries a detector called RAD that measures radiation on the surface of Mars. We used its
+          readings from the same storms to set the danger in the game.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Robots -->
+  <section class="block container">
+    <h2 class="section-title">Meet the real robots</h2>
+    <p class="flip-hint">Tap a robot file to flip it and read the real fact!</p>
+    <div class="robots">
+      {
+        robots.map((r) => (
+          <button type="button" class="flip-card" aria-pressed="false" data-flip>
+            <span class="flip-inner">
+              <span class="flip-face flip-front" data-face="front">
+                <img src={url(r.front)} alt={r.frontAlt} width="691" height="966" loading="lazy" />
+              </span>
+              <span class="flip-face flip-back" data-face="back" aria-hidden="true">
+                <img src={url(r.back)} alt={r.backAlt} width="691" height="966" loading="lazy" />
+              </span>
+            </span>
+            <span class="visually-hidden">(tap to flip)</span>
+          </button>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Fuentes -->
+  <section class="sources container">
+    <h2 class="sources-title">Where our data comes from</h2>
+    <p>
+      NASA DONKI (Space Weather Database Of Notifications, Knowledge, Information) · Mars Science Laboratory RAD data ·
+      NASA mission pages for Curiosity, Phoenix and Opportunity · ISRO Chandrayaan-3 mission for Pragyan
+    </p>
+  </section>
+</BaseLayout>
+
+<script>
+  // Voltea la ficha al picarla (y la regresa al picarla otra vez).
+  document.querySelectorAll<HTMLButtonElement>('[data-flip]').forEach((card) => {
+    card.addEventListener('click', () => {
+      const flipped = card.classList.toggle('is-flipped');
+      card.setAttribute('aria-pressed', String(flipped));
+      // Para lectores de pantalla: solo se lee la cara que se ve.
+      card.querySelector('[data-face="front"]')?.setAttribute('aria-hidden', String(flipped));
+      card.querySelector('[data-face="back"]')?.setAttribute('aria-hidden', String(!flipped));
+    });
+  });
+</script>
+
+<style>
+  .intro {
+    position: relative;
+    z-index: 1;
+    padding-top: clamp(40px, 6vw, 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .real-data {
+    color: var(--lilac);
+  }
+
+  .lead {
+    max-width: 640px;
+  }
+
+  .block {
+    position: relative;
+    z-index: 1;
+    margin-top: clamp(56px, 8vw, 90px);
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* --- Retraso de mensajes: dos cuadros --- */
+  .delay-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+  }
+
+  .delay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 30px 28px;
+    text-align: center;
+  }
+
+  .delay-label {
+    font-family: var(--font-hand);
+    font-size: 30px;
+    color: var(--ink);
+  }
+
+  .trip {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .planet-img {
+    flex: none;
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(31, 41, 51, 0.25));
+  }
+
+  .planet-img.earth { width: clamp(80px, 9vw, 110px); }
+  .planet-img.moon { width: clamp(46px, 5vw, 60px); }
+  .planet-img.mars { width: clamp(62px, 7vw, 84px); }
+
+  .dash {
+    flex: 1;
+    border-top: 3px dashed var(--orbit);
+  }
+
+  .trip.near {
+    justify-content: center;
+  }
+
+  /* La Luna queda cerquita, Marte lejos */
+  .dash.short {
+    flex: 0 0 28%;
+  }
+
+  .delay-value {
+    font-family: var(--font-hand);
+    font-size: 36px;
+    color: var(--orbit);
+  }
+
+  .delay-note {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .inline-icon {
+    float: left;
+    width: 44px;
+    height: auto;
+    margin: 2px 14px 4px 0;
+  }
+
+  /* --- Tarjetas --- */
+  .two-cols .card-icon {
+    width: 96px;
+    height: 96px;
+  }
+
+  .two-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 32px;
+  }
+
+  .source {
+    display: block;
+    margin-bottom: 4px;
+    font-family: var(--font-hand);
+    font-size: 19px;
+    color: var(--ink-soft);
+  }
+
+  .paper-card h3 {
+    margin-bottom: 8px;
+  }
+
+  /* --- Fichas de robots (flashcards que se voltean) --- */
+  .flip-hint {
+    margin-top: -18px;
+    text-align: center;
+    font-family: var(--font-hand);
+    font-size: clamp(20px, 2.2vw, 26px);
+    color: var(--orange);
+  }
+
+  .robots {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    max-width: 960px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  @media (max-width: 760px) {
+    .robots {
+      grid-template-columns: minmax(0, 1fr);
+      max-width: 440px;
+    }
+  }
+
+  .flip-card {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    aspect-ratio: 691 / 966;
+    perspective: 1600px;
+    border-radius: 34px;
+    transition: transform 0.2s ease;
+  }
+
+  .flip-card:hover {
+    transform: translateY(-6px) rotate(-1deg);
+  }
+
+  .flip-card:focus-visible {
+    outline: 3px dashed var(--orange);
+    outline-offset: 8px;
+  }
+
+  .flip-inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.3, 1.3, 0.5, 1);
+  }
+
+  .flip-card.is-flipped .flip-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-face {
+    position: absolute;
+    inset: 0;
+    display: block;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 34px;
+    filter: drop-shadow(6px 10px 0 rgba(0, 0, 0, 0.35));
+  }
+
+  .flip-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flip-inner {
+      transition: none;
+    }
+  }
+
+  /* --- Fuentes --- */
+  .sources {
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sources-title {
+    font-size: 34px;
+    color: var(--white);
+  }
+
+  .sources p {
+    max-width: 760px;
+    font-size: 17px;
+    color: #C9D6FF;
+  }
+</style>
