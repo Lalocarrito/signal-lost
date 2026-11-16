@@ -22,13 +22,13 @@ const robotArt = [
 ];
 
 // Fotos del Arizona Science Center (se pueden arrastrar en compu)
-// x / y / w son porcentajes dentro del tablero; rot es la inclinación.
+// x / y / size son porcentajes dentro del tablero (compu); mx / my / msize, lo mismo en celular; rot es la inclinación.
 const ascPhotos = [
-  { src: 'images/asc/asc-final-demo.jpg', alt: 'Our team with the Signal Lost game running on four laptops', w: 900, h: 675, x: 3, y: 4, size: 36, rot: -5 },
-  { src: 'images/asc/asc-team-table.jpg', alt: 'The six of us working at the Mars station table', w: 900, h: 675, x: 60, y: 3, size: 36, rot: 4 },
-  { src: 'images/asc/asc-entrance.jpg', alt: 'The team in front of the Arizona Science Center entrance', w: 506, h: 900, x: 42, y: 3, size: 15, rot: -3 },
-  { src: 'images/asc/asc-sharing.jpg', alt: 'Sharing our drawing process with visitors', w: 900, h: 675, x: 10, y: 57, size: 35, rot: 3 },
-  { src: 'images/asc/asc-digital-world.jpg', alt: 'Two team members at the My Digital World exhibit', w: 675, h: 900, x: 62, y: 55, size: 18, rot: 6 },
+  { src: 'images/asc/asc-final-demo.jpg', alt: 'Our team with the Signal Lost game running on four laptops', w: 900, h: 675, x: 3, y: 4, size: 36, rot: -5, mx: 3, my: 2, msize: 58 },
+  { src: 'images/asc/asc-team-table.jpg', alt: 'The six of us working at the Mars station table', w: 900, h: 675, x: 60, y: 3, size: 36, rot: 4, mx: 40, my: 13, msize: 56 },
+  { src: 'images/asc/asc-entrance.jpg', alt: 'The team in front of the Arizona Science Center entrance', w: 506, h: 900, x: 42, y: 3, size: 15, rot: -3, mx: 4, my: 59, msize: 27 },
+  { src: 'images/asc/asc-sharing.jpg', alt: 'Sharing our drawing process with visitors', w: 900, h: 675, x: 10, y: 57, size: 35, rot: 3, mx: 30, my: 68, msize: 46 },
+  { src: 'images/asc/asc-digital-world.jpg', alt: 'Two team members at the My Digital World exhibit', w: 675, h: 900, x: 62, y: 55, size: 18, rot: 6, mx: 70, my: 61, msize: 26 },
 ];
 ---
 
@@ -81,7 +81,7 @@ const ascPhotos = [
         ascPhotos.map((ph, i) => (
           <figure
             class="polaroid"
-            style={`--x:${ph.x}%; --y:${ph.y}%; --size:${ph.size}%; --rot:${ph.rot}deg; z-index:${i + 1};`}
+            style={`--x:${ph.x}%; --y:${ph.y}%; --size:${ph.size}%; --mx:${ph.mx}%; --my:${ph.my}%; --msize:${ph.msize}%; --rot:${ph.rot}deg; z-index:${i + 1};`}
             data-drag
           >
             <img src={url(ph.src)} alt={ph.alt} width={ph.w} height={ph.h} loading="lazy" draggable="false" />
@@ -93,15 +93,13 @@ const ascPhotos = [
 </BaseLayout>
 
 <script>
-  // Arrastrar las fotos dentro del tablero (solo con mouse/lápiz en pantallas grandes).
+  // Arrastrar las fotos dentro del tablero (mouse, lápiz o dedo).
   const board = document.querySelector('[data-board]');
-  const desktop = window.matchMedia('(min-width: 761px)');
   let top = 10;
 
   if (board) {
     board.querySelectorAll('[data-drag]').forEach((card) => {
       card.addEventListener('pointerdown', (e) => {
-        if (!desktop.matches) return;
         e.preventDefault();
         const b = board.getBoundingClientRect();
         const c = card.getBoundingClientRect();
@@ -113,12 +111,10 @@ const ascPhotos = [
         card.setPointerCapture(e.pointerId);
 
         const move = (ev) => {
-          const maxX = b.width - c.width;
-          const maxY = b.height - c.height;
-          const x = Math.min(Math.max(ev.clientX - b.left - offX, 0), maxX);
-          const y = Math.min(Math.max(ev.clientY - b.top - offY, 0), maxY);
-          card.style.setProperty('--x', `${(x / b.width) * 100}%`);
-          card.style.setProperty('--y', `${(y / b.height) * 100}%`);
+          const x = Math.min(Math.max(ev.clientX - b.left - offX, 0), b.width - c.width);
+          const y = Math.min(Math.max(ev.clientY - b.top - offY, 0), b.height - c.height);
+          card.style.left = `${(x / b.width) * 100}%`;
+          card.style.top = `${(y / b.height) * 100}%`;
         };
         const up = () => {
           card.classList.remove('is-dragging');
@@ -328,55 +324,30 @@ const ascPhotos = [
     pointer-events: none;
   }
 
-  /* En celular/tablet: collage fijo en dos columnas, sin arrastrar */
+  /* En celular: el mismo collage, pero con otras posiciones (mx / my / msize) */
   @media (max-width: 760px) {
-    .asc-hint {
-      display: none;
-    }
-
     .asc-text {
       padding: 0 6px;
     }
 
+    .asc-hint {
+      font-size: 18px;
+    }
+
     .photo-board {
-      aspect-ratio: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: start;
-      gap: 16px 12px;
-      padding: 18px 14px 22px;
+      aspect-ratio: 3 / 4.4;
     }
 
     .polaroid {
-      position: relative;
-      left: auto;
-      top: auto;
-      width: auto;
+      left: var(--mx);
+      top: var(--my);
+      width: var(--msize);
       padding: 5px 5px 14px;
-      cursor: default;
-      touch-action: auto;
-    }
-
-    .polaroid:nth-child(2) {
-      grid-column: 1 / -1;
     }
 
     .board-quote {
-      position: static;
-      grid-column: 1 / -1;
-      order: 1;
-      width: auto;
-      padding: 6px 0;
-      font-size: 30px;
-      transform: rotate(-3deg);
-    }
-
-    .polaroid:nth-child(2) {
-      order: 0;
-    }
-
-    .polaroid:nth-child(n + 3) {
-      order: 2;
+      top: 50%;
+      font-size: clamp(22px, 7vw, 30px);
     }
   }
 
