@@ -14,7 +14,7 @@ Challenge: **Junior Astronaut Mission Trainer** · Local event: **Phoenix, Arizo
 
 [![Play Signal Lost](https://img.shields.io/badge/▶_PLAY-Signal_Lost-F5A300?style=for-the-badge)](https://lalocarrito.github.io/signal-lost/)
 [![Website](https://img.shields.io/badge/Website-GitHub_Pages-1F2933?style=for-the-badge&logo=github)](https://lalocarrito.github.io/signal-lost/)
-[![Space Apps](https://img.shields.io/badge/NASA-Space_Apps_2026-0B3D91?style=for-the-badge&logo=nasa&logoColor=white)](https://www.spaceappschallenge.org/2026/find-a-team/2isi/)
+[![Space Apps](https://img.shields.io/badge/NASA-Space_Apps_2026-0B3D91?style=for-the-badge)](https://www.spaceappschallenge.org/2026/find-a-team/2isi/)
 
 <br>
 
