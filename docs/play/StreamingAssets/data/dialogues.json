@@ -1006,7 +1006,7 @@
    "scene": "trip",
    "mode": "all",
    "voiced": "no",
-   "text": "Light: you'll arrive short."
+   "text": "Too little! You won't make it."
   },
   {
    "id": "ui_trip_weight_ok",
@@ -1022,7 +1022,7 @@
    "scene": "trip",
    "mode": "all",
    "voiced": "no",
-   "text": "Heavy: steering will use more fuel."
+   "text": "Too heavy! Steering will use more fuel."
   },
   {
    "id": "ui_trip_launch",
